@@ -61,10 +61,6 @@ steps:
     testResultsFiles: '**\TEST-*.xml'
     searchFolder: '$(build.binariesdirectory)/$(BuildConfiguration)/test-assembly'
 
-- task: SonarSource.sonarcloud.ce096e50-6155-4de8-8800-4221aaeed4a1.SonarCloudAnalyze@1
-  displayName: 'Run Code Analysis'
-
-
 - task: AndroidSigning@2
   displayName: 'Signing and aligning APK'
   inputs:
